@@ -1,1 +1,5 @@
-<th><%= render(@invoices) || "No Invoices" %></th>
+<% @invoices.each do |invoice| %>
+  <tr>
+    <th><%= render(@invoices) || "No Invoices" %></th>
+  </tr>
+<% end %>
